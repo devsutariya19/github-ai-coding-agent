@@ -1,0 +1,14 @@
+Summary of GitHub Accessibility Issues:
+
+1.  **SPA Route Navigations Not Announced by Screen Readers:**
+    *   **Problem:** Screen readers (NVDA, VoiceOver) do not announce page changes during navigation within Single Page Applications (specifically Docusaurus).
+    *   **Impact:** Visually impaired users lack crucial auditory feedback on page transitions, leading to a confusing user experience.
+    *   **Technical Detail:** The History API's method of updating URLs lacks inherent accessibility support. The Navigation API is suggested as a potential future solution.
+
+2.  **Voice Access Shows Duplicate Numbers for Controls:**
+    *   **Problem:** The "Voice Access" tool (Windows 11) displays two numbers for a single control when the "Show numbers" command is issued.
+    *   **Impact:** Users with motor disabilities face difficulty in identifying and activating controls due to ambiguous numbering.
+
+3.  **Invisible Code Block Buttons (Fix Implemented):**
+    *   **Problem:** "Copy" and "Toggle word wrap" buttons within code blocks were almost invisible due to semi-transparent backgrounds blending with the code text.
+    *   **Solution:** The fix involves using an opaque background (`--ifm-background-surface-color`) and increasing opacity to 1 on hover to ensure clear visibility.
