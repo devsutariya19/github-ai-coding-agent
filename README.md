@@ -1,7 +1,7 @@
 
 **GitHub AI Coding Agent**
 
-A small LangChain-based assistant that indexes GitHub issues into an AstraDB vector store using Google Generative AI embeddings, and exposes a simple interactive agent to search issues and save quick notes.
+A simple command-line Python app that uses AI to make GitHub issues easy to search and explore. It uses LangChain with Google Gemini embeddings to index issues for semantic search and provides an interactive, chat-like interface to find related discussions and save quick local notes.
 
 **Features**
 - **Index GitHub issues**: Fetch issues from a repository and add them to an AstraDB vector collection.
