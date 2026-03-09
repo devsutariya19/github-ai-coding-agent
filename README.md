@@ -1,9 +1,9 @@
 
-**GitHub AI Coding Agent**
+# GitHub AI Coding Agent
 
 A simple command-line Python app that uses AI to make GitHub issues easy to search and explore. It uses LangChain with Google Gemini embeddings to index issues for semantic search and provides an interactive, chat-like interface to find related discussions and save quick local notes.
 
-**Features**
+## Features
 - **Index GitHub issues**: Fetch issues from a repository and add them to an AstraDB vector collection.
 - **Semantic search**: Use Google Generative AI embeddings and LangChain retriever to find relevant issues.
 - **Interactive agent**: Chat-style loop that answers questions about indexed GitHub issues using a tool-calling agent.
@@ -16,7 +16,7 @@ A simple command-line Python app that uses AI to make GitHub issues easy to sear
 - **requirements.txt**: Python dependencies used by the project.
 - **notes.txt**: Local file where `note_tool` appends saved notes.
 
-**Quick Start**
+## Quick Start
 1. Clone the repository and change into the project directory:
 
 ```bash
@@ -62,10 +62,10 @@ After setup the program enters an interactive loop:
 - Type questions about the indexed GitHub issues (or `q` to quit).
 - Use the `note_tool` to append short notes to `notes.txt`.
 
-**Environment & Credentials**
+### Environment & Credentials
 - This project uses Google Generative AI embeddings and LangChain integrations. Provide whatever credentials your chosen Google GenAI client requires (API key or service account) and ensure network access.
 - AstraDB credentials are required to connect and store vectors.
 
-**Notes**
+### Notes
 - `notes.txt` is created/appended in the repository directory by `note_tool`.
 - The GitHub fetch uses unauthenticated GitHub API calls in `github.py`. For higher rate limits or private repos, modify `fetch_github` to use a GitHub token.
